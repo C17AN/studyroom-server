@@ -19,4 +19,4 @@ app.use(express.json());
 app.use("/user", userRouter);
 app.use("/seat", seatRouter);
 
-app.listen(5000, () => console.log("server is at 5000"));
+app.listen(process.env.PORT || 5000, () => console.log("server is at 5000"));
